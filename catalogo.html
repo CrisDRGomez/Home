@@ -861,7 +861,7 @@
    fam: floral | oriental | amaderado | fresco | gourmand
    marca: slug de la marca
 ══════════════════════════════════════ */
-var CATALOG = [
+var CATALOG = JSON.parse(localStorage.getItem('hera_products') || 'null') || [
   { id:'jenny-1',      brand:'Jenny Rivera',       name:'Inolvidable EDP',    price:'$1,210 MXN', precio:1210, badge:'Más vendido', cat:'diseñador', gen:'femenino',  fam:'floral',    marca:'jenny-rivera',    nuevo:false, tipo:'perfumes', nivel:'green',  vols:[{ml:50,precio:1210},{ml:100,precio:1890}] },
   { id:'fierce-2',     brand:'Abercrombie & Fitch', name:'Fierce EDT',        price:'$760 MXN',   precio:760,  badge:'',           cat:'diseñador', gen:'masculino', fam:'fresco',    marca:'abercrombie',     nuevo:false, tipo:'perfumes', nivel:'green',  vols:[{ml:50,precio:760},{ml:100,precio:1180},{ml:200,precio:1740}] },
   { id:'authentic-3',  brand:'Abercrombie & Fitch', name:'Authentic EDP',     price:'$975 MXN',   precio:975,  badge:'Ed. limitada',cat:'diseñador', gen:'unisex',   fam:'amaderado', marca:'abercrombie',     nuevo:false, tipo:'perfumes', nivel:'yellow', vols:[{ml:50,precio:975},{ml:100,precio:1540}] },
